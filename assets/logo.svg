@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <!-- Aio Studio app icon: the AIO Technologies mark (aiotech.si,
+       /brand/logo-on-dark.svg) without the "TECHNOLOGIES" line, on the
+       brand navy, with a play button in the O. Brand colours: navy #0f1321,
+       cream #f2eee6, orange #f27a21. -->
+  <rect x="40" y="40" width="944" height="944" rx="216" fill="#0f1321"/>
+  <rect x="42" y="42" width="940" height="940" rx="214" fill="none" stroke="#f2eee6" stroke-opacity="0.08" stroke-width="4"/>
+  <!-- The mark spans x 253..1480, y 252..608 in the brand file; centre it at 78 % of the tile. -->
+  <g transform="translate(512 512) scale(0.65) translate(-866.5 -430)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M278 571H352C410 571 448 548 482 500L592 336C618 297 637 283 656 283C676 283 695 297 721 336L823 498C858 552 897 571 952 571H983Q1033 571 1033 521V284" stroke="#f2eee6" stroke-width="50"/>
+    <path d="M703 453H560C532 453 513 462 497 479" stroke="#f2eee6" stroke-width="47"/>
+    <circle cx="1302" cy="430" r="150" stroke="#f27a21" stroke-width="56"/>
+    <!-- A play button inside the O: this is the media converter -->
+    <path d="M1268 372 L1268 488 L1366 430 Z" fill="#f27a21" stroke="#f27a21" stroke-width="20"/>
+  </g>
+</svg>

@@ -1,0 +1,40 @@
+Aio Studio licence
+
+Copyright (c) 2026 AIO Technologies. All rights reserved.
+
+Aio Studio (the app "aio-studio" and the command line "aio") is not open
+source. Its source code is not published, and this licence gives no right to
+it.
+
+Linux
+  You may install and use Aio Studio for Linux on any number of computers,
+  free of charge, for any purpose, including commercial work. You may pass on
+  copies of the unchanged installers (.deb, .AppImage) to others, free of
+  charge, with this licence.
+
+macOS and Windows
+  Aio Studio for macOS and Windows is paid. You may use it under the terms
+  you accepted when you obtained it.
+
+On every system you may not sell Aio Studio, change it, or pass it on as part
+of a product of your own, except as the law where you live allows regardless
+of this licence.
+
+Parts made by others
+  Aio Studio comes with programs and libraries made by others, each under its
+  own licence, which this licence does not change. Above all it includes
+  FFmpeg, a separate program beside the app: on Linux under the GNU General
+  Public License version 2 or later, on macOS and Windows under the GNU Lesser
+  General Public License version 2.1 or later. Their licences, and where to
+  get their exact source code, are in the licences folder of every installer
+  (Help > Licences in the app shows them) and at
+  https://github.com/ChartAndChill/aio-studio.
+
+No warranty
+  Aio Studio is provided "as is", without warranty of any kind, express or
+  implied, including but not limited to the warranties of merchantability,
+  fitness for a particular purpose and non-infringement. In no event shall the
+  author be liable for any claim, damages or other liability arising from, out
+  of or in connection with Aio Studio or its use.
+
+Contact: info@aiotech.si
