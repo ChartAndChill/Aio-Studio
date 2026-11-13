@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/ChartAndChill/aio-studio/raw/main/downloads/aio-studio_1.0.0_amd64.deb"><b>⬇ Download for Debian / Ubuntu (.deb, x86_64, 47 MB)</b></a>
+  <a href="https://github.com/ChartAndChill/Aio-Studio/raw/main/downloads/aio-studio_1.0.0_amd64.deb"><b>⬇ Download for Debian / Ubuntu (.deb, x86_64, 47 MB)</b></a>
 </p>
 
 ![The editor: three shots from Sintel on the timeline, a title, music and subtitles](screenshots/01-editor.png)
@@ -82,7 +82,7 @@ Discord"), and press Start.
 **Debian 12+, Ubuntu 22.04+, Linux Mint 21+, Pop!_OS, elementary and other
 Debian-based systems (x86_64):**
 
-1. Download [`aio-studio_1.0.0_amd64.deb`](https://github.com/ChartAndChill/aio-studio/raw/main/downloads/aio-studio_1.0.0_amd64.deb).
+1. Download [`aio-studio_1.0.0_amd64.deb`](https://github.com/ChartAndChill/Aio-Studio/raw/main/downloads/aio-studio_1.0.0_amd64.deb).
 2. Install it:
 
    ```bash
