@@ -9,9 +9,9 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/ChartAndChill/Aio-Studio/raw/main/downloads/aio-studio_1.0.0_amd64.deb"><b>⬇ Debian / Ubuntu (.deb, x86_64, 47 MB)</b></a>
+  <a href="https://github.com/ChartAndChill/Aio-Studio/raw/main/downloads/aio-studio_1.1.0_amd64.deb"><b>⬇ Debian / Ubuntu (.deb, x86_64, 47 MB)</b></a>
   &nbsp;·&nbsp;
-  <a href="https://github.com/ChartAndChill/Aio-Studio/raw/main/downloads/aio-studio_1.0.0_x86_64.AppImage"><b>⬇ Any other Linux (AppImage, x86_64, 40 MB)</b></a>
+  <a href="https://github.com/ChartAndChill/Aio-Studio/raw/main/downloads/aio-studio_1.1.0_x86_64.AppImage"><b>⬇ Any other Linux (AppImage, x86_64, 40 MB)</b></a>
 </p>
 
 ![The editor: three shots from Sintel on the timeline, a title, music and subtitles](screenshots/01-editor.png)
@@ -84,11 +84,11 @@ Discord"), and press Start.
 **Debian 12+, Ubuntu 22.04+, Linux Mint 21+, Pop!_OS, elementary and other
 Debian-based systems (x86_64):**
 
-1. Download [`aio-studio_1.0.0_amd64.deb`](https://github.com/ChartAndChill/Aio-Studio/raw/main/downloads/aio-studio_1.0.0_amd64.deb).
+1. Download [`aio-studio_1.1.0_amd64.deb`](https://github.com/ChartAndChill/Aio-Studio/raw/main/downloads/aio-studio_1.1.0_amd64.deb).
 2. Install it:
 
    ```bash
-   sudo apt install ./aio-studio_1.0.0_amd64.deb
+   sudo apt install ./aio-studio_1.1.0_amd64.deb
    ```
 
 3. Open **Aio Studio** from your applications menu, or run `aio-studio`.
@@ -102,15 +102,15 @@ FFmpeg.
 
 **Fedora, Arch, openSUSE and any other Linux (x86_64):**
 
-1. Download [`aio-studio_1.0.0_x86_64.AppImage`](https://github.com/ChartAndChill/Aio-Studio/raw/main/downloads/aio-studio_1.0.0_x86_64.AppImage).
+1. Download [`aio-studio_1.1.0_x86_64.AppImage`](https://github.com/ChartAndChill/Aio-Studio/raw/main/downloads/aio-studio_1.1.0_x86_64.AppImage).
 2. Make it runnable and run it:
 
    ```bash
-   chmod +x aio-studio_1.0.0_x86_64.AppImage
+   chmod +x aio-studio_1.1.0_x86_64.AppImage
    ```
 
    ```bash
-   ./aio-studio_1.0.0_x86_64.AppImage
+   ./aio-studio_1.1.0_x86_64.AppImage
    ```
 
    On a system without FUSE, add `--appimage-extract-and-run`.
@@ -151,6 +151,11 @@ run on any card with a Vulkan driver.
   correctly.
 - **Auto captions**: speech to subtitles with whisper.cpp, on your own
   computer. Nothing is uploaded.
+- **Animated captions**: burned subtitles that light up word by word as
+  they are said (karaoke), or pop one word at a time, in a colour you pick.
+- **Edit by the words**: cut a sentence out of the video from its subtitle,
+  mark single words and cut just those, or remove every "um" and "uh" in
+  one go (and one Undo).
 - **Sound**: audio tracks, a loudness meter, noise reduction, a one-click
   voice leveller, ducking music under a voice, voice-over recording, and
   loudness normalisation to −14 or −16 LUFS.
@@ -231,7 +236,7 @@ aio mcp
   General Public License version 2 or later**, because it is built with
   `--enable-gpl`, x264 and x265. Its complete corresponding source, with every
   library it is built with and the scripts that build them, is
-  [`downloads/aio-studio-sources-v1.0.0.tar`](downloads/aio-studio-sources-v1.0.0.tar).
+  [`downloads/aio-studio-sources-v1.1.0.tar`](downloads/aio-studio-sources-v1.1.0.tar).
 - Every installed copy has the full texts in
   `/usr/lib/aio-studio/licenses/`, and **Help ▸ Licences** in the app shows
   them.
