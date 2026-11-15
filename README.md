@@ -9,7 +9,9 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/ChartAndChill/Aio-Studio/raw/main/downloads/aio-studio_1.0.0_amd64.deb"><b>⬇ Download for Debian / Ubuntu (.deb, x86_64, 47 MB)</b></a>
+  <a href="https://github.com/ChartAndChill/Aio-Studio/raw/main/downloads/aio-studio_1.0.0_amd64.deb"><b>⬇ Debian / Ubuntu (.deb, x86_64, 47 MB)</b></a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/ChartAndChill/Aio-Studio/raw/main/downloads/aio-studio_1.0.0_x86_64.AppImage"><b>⬇ Any other Linux (AppImage, x86_64, 40 MB)</b></a>
 </p>
 
 ![The editor: three shots from Sintel on the timeline, a title, music and subtitles](screenshots/01-editor.png)
@@ -45,7 +47,7 @@ source sits right here, next to the installer
 |---|---|---|---|
 | Price | **Free, forever** | Paid | Paid |
 | Use at work, for money | ✅ | ✅ (with a licence) | ✅ (with a licence) |
-| Give copies to friends | ✅ the unchanged `.deb` | ❌ | ❌ |
+| Give copies to friends | ✅ the unchanged `.deb` or AppImage | ❌ | ❌ |
 | App source code | closed | closed | closed |
 | Bundled FFmpeg | GPL-2.0-or-later, with x264 and x265 | LGPL-2.1-or-later | LGPL-2.1-or-later |
 | FFmpeg source | ✅ in this repo | on request | on request |
@@ -92,17 +94,36 @@ Debian-based systems (x86_64):**
 3. Open **Aio Studio** from your applications menu, or run `aio-studio`.
    The command-line tool is `aio`.
 
-To check the download first, put [`SHA256SUMS`](SHA256SUMS) next to it and run:
-
-```bash
-sha256sum -c SHA256SUMS --ignore-missing
-```
-
 To remove it: `sudo apt remove aio-studio`.
 
 The package puts `aio-studio` and `aio` in `/usr/bin` and its FFmpeg in
 `/usr/lib/aio-studio/ffmpeg/`. It does not touch, need or replace a system
 FFmpeg.
+
+**Fedora, Arch, openSUSE and any other Linux (x86_64):**
+
+1. Download [`aio-studio_1.0.0_x86_64.AppImage`](https://github.com/ChartAndChill/Aio-Studio/raw/main/downloads/aio-studio_1.0.0_x86_64.AppImage).
+2. Make it runnable and run it:
+
+   ```bash
+   chmod +x aio-studio_1.0.0_x86_64.AppImage
+   ```
+
+   ```bash
+   ./aio-studio_1.0.0_x86_64.AppImage
+   ```
+
+   On a system without FUSE, add `--appimage-extract-and-run`.
+
+To check a download first, put [`SHA256SUMS`](SHA256SUMS) next to it and run:
+
+```bash
+sha256sum -c SHA256SUMS --ignore-missing
+```
+
+Both files come out of the project's release pipeline, which builds them on
+Ubuntu 22.04, installs the `.deb` there and runs the installed `aio` before
+it lets them out.
 
 **Requirements:** a 64-bit x86 PC, glibc 2.35 or newer, X11 or Wayland, and
 OpenGL (any Mesa, NVIDIA or AMD driver from the last ten years). A
@@ -187,7 +208,7 @@ aio mcp
 |---|---|
 | Language | Rust, in four crates: the media core, the GUI, the CLI and the AI layer |
 | GUI | [egui](https://github.com/emilk/egui) with OpenGL, drawn directly: no Electron, no web view, no Qt or GTK |
-| Size | the app is one ~16 MB binary; the whole package with FFmpeg is 47 MB |
+| Size | the app is one ~16 MB binary; with FFmpeg the `.deb` is 47 MB and the AppImage 40 MB |
 | Media engine | FFmpeg 8.1.3, built in CI for this app and run as a separate program |
 | FFmpeg codecs | x264, x265, SVT-AV1, libvpx, Opus, LAME, plus libass, FreeType, HarfBuzz and FriBidi for text |
 | GPU | NVENC for H.264, HEVC and AV1 on NVIDIA; whisper.cpp on Vulkan for auto captions |
@@ -204,8 +225,8 @@ aio mcp
 
 - **Aio Studio** (the `aio-studio` app and the `aio` command) is © 2026
   AIO Technologies, under its own licence: [`LICENSE`](LICENSE). On Linux it
-  is free of charge for any use, and you may pass on the unchanged `.deb`. It
-  is not open source, and you may not sell it or change it.
+  is free of charge for any use, and you may pass on the unchanged `.deb` and
+  AppImage. It is not open source, and you may not sell it or change it.
 - **FFmpeg**, inside the package, is a separate program under the **GNU
   General Public License version 2 or later**, because it is built with
   `--enable-gpl`, x264 and x265. Its complete corresponding source, with every
