@@ -9,9 +9,9 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/ChartAndChill/Aio-Studio/raw/main/downloads/aio-studio_1.1.0_amd64.deb"><b>⬇ Debian / Ubuntu (.deb, x86_64, 47 MB)</b></a>
+  <a href="https://github.com/ChartAndChill/Aio-Studio/raw/main/downloads/aio-studio_1.2.0_amd64.deb"><b>⬇ Debian / Ubuntu (.deb, x86_64, 47 MB)</b></a>
   &nbsp;·&nbsp;
-  <a href="https://github.com/ChartAndChill/Aio-Studio/raw/main/downloads/aio-studio_1.1.0_x86_64.AppImage"><b>⬇ Any other Linux (AppImage, x86_64, 40 MB)</b></a>
+  <a href="https://github.com/ChartAndChill/Aio-Studio/raw/main/downloads/aio-studio_1.2.0_x86_64.AppImage"><b>⬇ Any other Linux (AppImage, x86_64, 40 MB)</b></a>
 </p>
 
 ![The editor: three shots from Sintel on the timeline, a title, music and subtitles](screenshots/01-editor.png)
@@ -84,11 +84,11 @@ Discord"), and press Start.
 **Debian 12+, Ubuntu 22.04+, Linux Mint 21+, Pop!_OS, elementary and other
 Debian-based systems (x86_64):**
 
-1. Download [`aio-studio_1.1.0_amd64.deb`](https://github.com/ChartAndChill/Aio-Studio/raw/main/downloads/aio-studio_1.1.0_amd64.deb).
+1. Download [`aio-studio_1.2.0_amd64.deb`](https://github.com/ChartAndChill/Aio-Studio/raw/main/downloads/aio-studio_1.2.0_amd64.deb).
 2. Install it:
 
    ```bash
-   sudo apt install ./aio-studio_1.1.0_amd64.deb
+   sudo apt install ./aio-studio_1.2.0_amd64.deb
    ```
 
 3. Open **Aio Studio** from your applications menu, or run `aio-studio`.
@@ -102,15 +102,15 @@ FFmpeg.
 
 **Fedora, Arch, openSUSE and any other Linux (x86_64):**
 
-1. Download [`aio-studio_1.1.0_x86_64.AppImage`](https://github.com/ChartAndChill/Aio-Studio/raw/main/downloads/aio-studio_1.1.0_x86_64.AppImage).
+1. Download [`aio-studio_1.2.0_x86_64.AppImage`](https://github.com/ChartAndChill/Aio-Studio/raw/main/downloads/aio-studio_1.2.0_x86_64.AppImage).
 2. Make it runnable and run it:
 
    ```bash
-   chmod +x aio-studio_1.1.0_x86_64.AppImage
+   chmod +x aio-studio_1.2.0_x86_64.AppImage
    ```
 
    ```bash
-   ./aio-studio_1.1.0_x86_64.AppImage
+   ./aio-studio_1.2.0_x86_64.AppImage
    ```
 
    On a system without FUSE, add `--appimage-extract-and-run`.
@@ -127,8 +127,10 @@ it lets them out.
 
 **Requirements:** a 64-bit x86 PC, glibc 2.35 or newer, X11 or Wayland, and
 OpenGL (any Mesa, NVIDIA or AMD driver from the last ten years). A
-graphics card is optional: NVIDIA cards encode with NVENC, and auto captions
-run on any card with a Vulkan driver.
+graphics card is optional: NVIDIA cards encode with NVENC, Intel and AMD
+cards with VAAPI (new in 1.2.0, through your system's own libva and driver),
+and auto captions run on any card with a Vulkan driver. The app tests the
+card's encoders itself and does on the CPU whatever the card cannot.
 
 ---
 
@@ -216,7 +218,7 @@ aio mcp
 | Size | the app is one ~16 MB binary; with FFmpeg the `.deb` is 47 MB and the AppImage 40 MB |
 | Media engine | FFmpeg 8.1.3, built in CI for this app and run as a separate program |
 | FFmpeg codecs | x264, x265, SVT-AV1, libvpx, Opus, LAME, plus libass, FreeType, HarfBuzz and FriBidi for text |
-| GPU | NVENC for H.264, HEVC and AV1 on NVIDIA; whisper.cpp on Vulkan for auto captions |
+| GPU | NVENC for H.264, HEVC and AV1 on NVIDIA; VAAPI for H.264 and HEVC on Intel and AMD; whisper.cpp on Vulkan for auto captions |
 | Speech | whisper.cpp inside FFmpeg's `whisper` filter; models (tiny to large-v3-turbo) are fetched on first use and checked by SHA-256 |
 | Preview | frames decoded by FFmpeg and drawn by the GUI; the same filter graph as the export, so what you see is what you get |
 | Projects | plain JSON (`.aio.json`) with a published JSON Schema (`aio schema`), autosaved, with crash recovery |
@@ -236,7 +238,7 @@ aio mcp
   General Public License version 2 or later**, because it is built with
   `--enable-gpl`, x264 and x265. Its complete corresponding source, with every
   library it is built with and the scripts that build them, is
-  [`downloads/aio-studio-sources-v1.1.0.tar`](downloads/aio-studio-sources-v1.1.0.tar).
+  [`downloads/aio-studio-sources-v1.2.0.tar`](downloads/aio-studio-sources-v1.2.0.tar).
 - Every installed copy has the full texts in
   `/usr/lib/aio-studio/licenses/`, and **Help ▸ Licences** in the app shows
   them.
