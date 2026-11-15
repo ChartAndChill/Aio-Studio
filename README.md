@@ -9,9 +9,9 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/ChartAndChill/Aio-Studio/raw/main/downloads/aio-studio_1.2.0_amd64.deb"><b>⬇ Debian / Ubuntu (.deb, x86_64, 47 MB)</b></a>
+  <a href="https://github.com/ChartAndChill/Aio-Studio/raw/main/downloads/aio-studio_1.3.0_amd64.deb"><b>⬇ Debian / Ubuntu (.deb, x86_64, 47 MB)</b></a>
   &nbsp;·&nbsp;
-  <a href="https://github.com/ChartAndChill/Aio-Studio/raw/main/downloads/aio-studio_1.2.0_x86_64.AppImage"><b>⬇ Any other Linux (AppImage, x86_64, 40 MB)</b></a>
+  <a href="https://github.com/ChartAndChill/Aio-Studio/raw/main/downloads/aio-studio_1.3.0_x86_64.AppImage"><b>⬇ Any other Linux (AppImage, x86_64, 40 MB)</b></a>
 </p>
 
 ![The editor: three shots from Sintel on the timeline, a title, music and subtitles](screenshots/01-editor.png)
@@ -84,11 +84,11 @@ Discord"), and press Start.
 **Debian 12+, Ubuntu 22.04+, Linux Mint 21+, Pop!_OS, elementary and other
 Debian-based systems (x86_64):**
 
-1. Download [`aio-studio_1.2.0_amd64.deb`](https://github.com/ChartAndChill/Aio-Studio/raw/main/downloads/aio-studio_1.2.0_amd64.deb).
+1. Download [`aio-studio_1.3.0_amd64.deb`](https://github.com/ChartAndChill/Aio-Studio/raw/main/downloads/aio-studio_1.3.0_amd64.deb).
 2. Install it:
 
    ```bash
-   sudo apt install ./aio-studio_1.2.0_amd64.deb
+   sudo apt install ./aio-studio_1.3.0_amd64.deb
    ```
 
 3. Open **Aio Studio** from your applications menu, or run `aio-studio`.
@@ -102,15 +102,15 @@ FFmpeg.
 
 **Fedora, Arch, openSUSE and any other Linux (x86_64):**
 
-1. Download [`aio-studio_1.2.0_x86_64.AppImage`](https://github.com/ChartAndChill/Aio-Studio/raw/main/downloads/aio-studio_1.2.0_x86_64.AppImage).
+1. Download [`aio-studio_1.3.0_x86_64.AppImage`](https://github.com/ChartAndChill/Aio-Studio/raw/main/downloads/aio-studio_1.3.0_x86_64.AppImage).
 2. Make it runnable and run it:
 
    ```bash
-   chmod +x aio-studio_1.2.0_x86_64.AppImage
+   chmod +x aio-studio_1.3.0_x86_64.AppImage
    ```
 
    ```bash
-   ./aio-studio_1.2.0_x86_64.AppImage
+   ./aio-studio_1.3.0_x86_64.AppImage
    ```
 
    On a system without FUSE, add `--appimage-extract-and-run`.
@@ -238,7 +238,7 @@ aio mcp
   General Public License version 2 or later**, because it is built with
   `--enable-gpl`, x264 and x265. Its complete corresponding source, with every
   library it is built with and the scripts that build them, is
-  [`downloads/aio-studio-sources-v1.2.0.tar`](downloads/aio-studio-sources-v1.2.0.tar).
+  [`downloads/aio-studio-sources-v1.3.0.tar`](downloads/aio-studio-sources-v1.3.0.tar).
 - Every installed copy has the full texts in
   `/usr/lib/aio-studio/licenses/`, and **Help ▸ Licences** in the app shows
   them.
